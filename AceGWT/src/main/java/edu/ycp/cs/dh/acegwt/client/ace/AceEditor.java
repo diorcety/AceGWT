@@ -143,6 +143,36 @@ public class AceEditor extends Composite implements RequiresResize, HasText, Tak
 	}-*/;
 
 	/**
+	 * Set auto scroll of the editor
+	 *
+	 * @param b flag for autoscroll
+	 */
+	public native void setAutoScrollEditorIntoView(boolean b) /*-{
+		var editor = this.@edu.ycp.cs.dh.acegwt.client.ace.AceEditor::editor;
+		return editor.setAutoScrollEditorIntoView(b);
+	}-*/;
+
+	/**
+	 * Set the minLines.
+	 *
+	 * @param minLines the minimal line number
+	 */
+	public native void setMinLines(int minLines) /*-{
+		var editor = this.@edu.ycp.cs.dh.acegwt.client.ace.AceEditor::editor;
+		return editor.setOption("minLines", minLines);
+	}-*/;
+
+	/**
+	 * Set the maxLines.
+	 *
+	 * @param maxLines the maximal line number
+	 */
+	public native void setMaxLines(int maxLines) /*-{
+		var editor = this.@edu.ycp.cs.dh.acegwt.client.ace.AceEditor::editor;
+		return editor.setOption("maxLines", maxLines);
+	}-*/;
+
+	/**
 	 * Set the mode.
 	 *
 	 * @param mode the mode (one of the values in the
